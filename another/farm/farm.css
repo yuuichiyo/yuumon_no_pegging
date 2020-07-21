@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+#intro{
+	display:inline-block;
+	
+}
+#intro img{
+	float:left;
+	margin-right:10px;
+}
+#intro p{
+	
+	font-size:1.2em;
+}
+
+h2{
+	
+}

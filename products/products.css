@@ -1,0 +1,385 @@
+/*56行目問題あり*/
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+/*みんなの農場文字*/
+.pseudo{
+	color:green;
+	font-family:Georgia;
+	margin:30px auto;
+	width:180px;
+	font-size:30px;
+	text-align:center;
+	position:relative;
+}
+.pseudo::before{
+	content:"";
+	display:block;
+	width:40px;
+	height:3px;
+	background-color:hotpink;
+	position:absolute;
+	top:20px;
+	left:-50px;
+}
+.pseudo::after{
+	content:"";
+	display:block;
+	width:40px;
+	height:3px;
+	background-color:hotpink;
+	position:absolute;
+	top:20px;
+	right:-50px;
+}
+
+
+
+/*農地のイメージ*/
+#bgsand{
+    background-color:sienna;/*background:linear-gradient使えない？*/
+    width:1200px;
+    height:1050px;
+	padding-top:20px;
+	margin:auto;
+	position:relative;
+
+	/*フェンスで囲い*/
+	 border: 0px solid;
+	background-image: url(images/fence2.png),url(images/fence2.png);
+	background-repeat:repeat-x,repeat-x;
+	background-position:left top ,left bottom;
+}
+
+/*３要素の配置*/
+#categotop{
+	display:flex;
+	justify-content:center;
+	margin:30px;
+}
+#categobottom{
+	display:flex;
+	justify-content:space-around;
+}
+
+/*緑黄色*/
+#greenvege{
+	background-image: url("images/greenvege.jpeg");
+	background-color:rgba(255,255,255,0.3);
+	background-blend-mode:lighten;
+
+	margin:30px;
+	position:relative;
+	top:20px;
+	left:0px;
+}
+
+/*穀類*/
+#cereals{
+	background-image: url("images/cereals.jpeg");
+	background-color:rgba(255,255,255,0.3);
+	background-blend-mode:lighten;
+
+	margin:30px;
+	top:30px;
+	left:0px;
+
+}
+
+/*肉鶏卵*/
+#meetdairy{
+	background-image: url("images/meetdairy.jpeg");
+	background-color:rgba(255,255,255,0.3);
+	background-blend-mode:lighten;
+
+	top:60px;
+	right:0px;
+}
+
+/*3要素共通プロパティ*/
+.sepa{
+	width:400px;
+	height:350px;
+	
+    border: solid 1px #ada;
+    border-right: solid 5px #5dd;
+	border-bottom: solid 7px #5dd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+
+    font-weight: bold;
+    color: #fff;
+ 
+}
+.sepa:hover{
+	border: solid 1px #ada;
+    border-right: solid 20px #5dd;
+	border-bottom: solid 10px #5dd;
+	
+}
+
+/*3要素文字*/
+.sepa b{
+	position: absolute;
+	top: 82%;
+	left: 100px;
+	width: 200px;
+	
+	font-size:25px;
+
+	background: rgba(0,0,0,.6);
+    
+}
+
+
+
+
+/*イラスト配置*/
+#fox{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(180px,140px);
+}
+#ant{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1000px,150px);
+}
+#bboar{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(900px,400px);
+}
+#blueflower{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(10px,140px);
+}
+#butterfly{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(40px,60px);
+}
+#cabbage{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(750px,450px);
+}
+#carrot{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(830px,50px);
+}
+#chicken{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1000px,900px);
+}
+#cow{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(630px,800px);
+}
+#dandelion{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(520px,600px);
+}
+#dumpling{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(190px,300px);
+}
+#farmmachinery{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(180px,920px);
+}
+#fence{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(520px,450px);
+	
+}
+#frog{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(50px,550px);
+}
+#grass{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(50px,200px);
+}
+
+#grayheron{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(300px,300px);
+}
+#lettuce{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(800px,300px);
+}
+#man{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(200px,400px);
+}
+#mantis{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(400px,500px);
+}
+#mole{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1050px,300px);
+}
+#mole1{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(40px,400px);
+}
+#onion1{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(300px,100px);
+}
+#onion2{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(40px,300px);
+}
+#pig{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(700px,900px);
+}
+#pinkflower{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(810px,910px);
+}
+#ricehave{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(30px,800px);
+}
+#rice2{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(30px,920px);
+}
+#sheep{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1100px,600px);
+}
+#snails{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(550px,710px);
+}
+#sparrow{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(500px,830px);
+}
+#sprout{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(300px,200px);
+}
+#watermelon{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1100px,100px);
+}
+#weed1{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(300px,920px);
+}
+#weed2{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(380px,920px);
+}
+#yellowflower{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(850px,150px);
+}
+#grassa{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(1100px,450px);
+}
+#grassb{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(630px,580px);
+}
+#grassc{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(550px,880px);
+}
+#grassd{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform:translate(350px,400px);
+}
+
+
+
+
+
+

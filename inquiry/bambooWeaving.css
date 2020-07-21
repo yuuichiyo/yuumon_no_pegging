@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	/*背景画像を指定し、明るく白い色調にする */
+	background-image: url("images/ami0.jpeg");
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+}
+

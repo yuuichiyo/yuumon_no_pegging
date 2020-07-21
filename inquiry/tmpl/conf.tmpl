@@ -1,0 +1,32 @@
+﻿<!doctypr html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../bambooWeaving.css">
+<!--
+span { color:green; }
+-->
+</style>
+<title>確認フォーム</title>
+</head>
+<body>
+<p>次の内容でよろしければ、送信ボタンを押してください。</p>
+<p>
+	■お名前 ： <span>!name!</span>
+</p>
+<p>
+	■メールアドレス ： <span>!email!</span>
+</p>
+<p>
+	■コメント ： <span>!comment!</span>
+</p>
+<form action="form.php" method="post">
+<input type="hidden" name="mode" value="send">
+<input type="hidden" name="name" value="!name!">
+<input type="hidden" name="email" value="!email!">
+<input type="hidden" name="comment" value="!comment!">
+<input type="button" value="前に戻る" onclick="history.back()">
+<input type="submit" value="送信する">
+</form>
+</body>
+</html>

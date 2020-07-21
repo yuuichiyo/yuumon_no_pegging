@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#vegerigion{
+    background-color:rgba(230,200,170,0.4);
+}
+
+figcaption{
+    background-color:lightyellow;
+}
+
+#explain{
+	background-color:rgba(255,130,150,0.4);
+}

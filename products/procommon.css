@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+#vegerigion{
+    background-color:lightskyblue;
+    width:100%;
+    height:700px;
+}
+/*写真位置調節*/
+#vegetop{
+    display:flex;
+    justify-content:center;
+}
+#vegebuttom{
+    display:flex;
+    justify-content:center;   
+}
+/*写真調節*/
+#vegerigion li img{
+    width:250px;
+    height:250px;
+}
+
+#vegerigion li{
+    float:left;
+    margin:5px 30px;
+}
+figure{text-align:center;}
+figcaption{color:grey;font:18px arial;background-color:lightyellow;}
+
+
+#explain{
+	background-color:lightgreen;
+	width:100%;
+	height:400px;
+}
+
